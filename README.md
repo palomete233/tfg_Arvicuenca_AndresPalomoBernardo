@@ -28,24 +28,6 @@ Este proyecto busca apliar mis conocimientos aprendidos en estos dos años y de 
     * Gestionar categorías y marcas.
     * Gestionar el stock de los productos.
     * Gestionar cuentas de usuario (Eliminar y mododificar permisos).
-
----
-
-## 🖼️ Vistas Previas (Screenshots)
-
-*Aquí es muy recomendable que añadas capturas de pantalla de tu aplicación. Sube las imágenes a tu repositorio (ej. en una carpeta `/docs/images`) y enlaza a ellas.*
-
-| Página de Inicio | Catálogo de Productos |
-| :---: | :---: |
-| [Imagen de la Home Page] | [Imagen de la página de productos/filtros] |
-
-| Carrito de Compras | Proceso de Pago (Checkout) |
-| :---: | :---: |
-| [Imagen del carrito] | [Imagen del checkout] |
-
-*(Ejemplo de cómo enlazar una imagen si la subes a la carpeta /docs/images/home.png)*
-`![Página de Inicio](docs/images/home.png)`
-
 ---
 
 ## 🛠️ Stack Tecnológico
@@ -53,23 +35,18 @@ Este proyecto busca apliar mis conocimientos aprendidos en estos dos años y de 
 Este proyecto está construido utilizando las siguientes tecnologías:
 
 ### Frontend
-* **[React](https://reactjs.org/)** (o [Vue.js](https://vuejs.org/), [Angular](https://angular.io/), [HTML/CSS/JS puro])
-* **[Tailwind CSS](https://tailwindcss.com/)** (o [Bootstrap](https://getbootstrap.com/), [Material-UI](https://mui.com/), [Sass](https://sass-lang.com/))
-* **[React Router](https://reactrouter.com/)** (para el enrutado)
-* **[Axios](https://axios-http.com/)** (para las peticiones HTTP)
+* **[JavaScript](https://lenguajejs.com/javascript)**
+* **[HTML](https://lenguajehtml.com)**
+* **[CSS](https://lenguajecss.com)**
 
 ### Backend
-* **[Node.js](https://nodejs.org/)** (con **[Express](https://expressjs.com/)**) (o [Python/Django], [Java/Spring Boot], [PHP/Laravel])
-* **[Sequelize](https://sequelize.org/)** (o [Mongoose], [Prisma], [TypeORM]) como ORM.
-* **[JWT (JSON Web Tokens)](https://jwt.io/)** (para la autenticación)
-* **[Stripe](https://stripe.com/)** (para la simulación de pasarela de pago) [O el que hayas usado]
+* **[PHP](https://www.php.net)**
 
 ### Base de Datos
-* **[MySQL](https://www.mysql.com/)** (o [PostgreSQL](https://www.postgresql.org/), [MongoDB](https://www.mongodb.com/))
+* **[MySQL](https://www.mysql.com/)**
 
 ### Despliegue (Opcional)
-* [Vercel](https://vercel.com/) (para el Frontend)
-* [Heroku](https://www.heroku.com/) / [Render](https://render.com/) (para el Backend y la BD)
+* [Hostinger](https://www.hostinger.com/es?utm_campaign=Brand-Exact|NT:Se|LO:ES&utm_medium=ppc&gad_source=1&gad_campaignid=2075050483&gclid=CjwKCAiA_dDIBhB6EiwAvzc1cPZDg5nsqvaAm-E1F7H_b893rFM0qrR5tZNl4ORPIjv8f6A19gwjlxoCNYYQAvD_BwE)
 
 ---
 
