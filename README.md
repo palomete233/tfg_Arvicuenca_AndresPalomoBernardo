@@ -45,18 +45,39 @@ Este proyecto está construido utilizando las siguientes tecnologías:
 ### Base de Datos
 * **[MySQL](https://www.mysql.com/)**
 
-### Despliegue (Opcional)
+### Despliegue
 * [Hostinger](https://www.hostinger.com/es?utm_campaign=Brand-Exact|NT:Se|LO:ES&utm_medium=ppc&gad_source=1&gad_campaignid=2075050483&gclid=CjwKCAiA_dDIBhB6EiwAvzc1cPZDg5nsqvaAm-E1F7H_b893rFM0qrR5tZNl4ORPIjv8f6A19gwjlxoCNYYQAvD_BwE)
 
 ---
 
 ## ⚙️ Instalación y Puesta en Marcha (Local)
 
-Sigue estos pasos para levantar el proyecto en un entorno local.
-
-*(Este es un ejemplo asumiendo una estructura estándar de Frontend/Backend. ¡Ajústalo a tu proyecto!)*
+Sigue estos pasos para desplegar este proyecto en tu equipo local
 
 ### Prerrequisitos
-* Node.js (v16 o superior)
-* NPM / Yarn
-* [Nombre de tu BD] (ej. MySQL Workbench)
+* Tener instalado XAMP
+* Tener visual studio code
+* Tener la base de datos descargada.
+* Tener la extension php server en visual studio code
+* Tener las credenciales
+
+### Paso 1
+Descargar la base de datos esta se encuentra en la siguiente ruta tfg/sql/arvicuenca.sql
+
+### Paso 2
+Descargar el proyecto entero este sera un arcvho .rar llamado tfg
+
+### Paso 3
+Descomprimir el archivo .rar en la siguiente ruta C:\xampp\htdocs
+
+### Paso 4
+Abrir el proyecto en visual studio code, para ello le damos a file despues a open folder y buscamos el archivo que acabamos de descomprimir
+
+### Paso 5
+Buscamos el archivo index.php este se encontrara fuera de todas las carpetas es decir en la carpeta raiz del proyecto, entramos en el archivo como si lo fueramos a editar y le damos click derecho se nos deplegaran muchas opciones nosotros debemos darle a la de PHP Server: reload server esto hara que se nos abra la pagina princiapl del proyecto en el navegador.
+
+### Paso 6
+Por ultimo debemos de buscar el archivo credenciales.txt que se encontrara junto al de index.php este archivo nos dara dos usuarios uno administrador y otro cliente para que podamos hacer uso de toda la web.
+
+
+
