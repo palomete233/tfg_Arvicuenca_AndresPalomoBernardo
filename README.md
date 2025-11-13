@@ -62,21 +62,24 @@ Sigue estos pasos para desplegar este proyecto en tu equipo local
 * Tener las credenciales
 
 ### Paso 1
-Descargar la base de datos esta se encuentra en la siguiente ruta tfg/sql/arvicuenca.sql
+Descargar la base de datos esta se encuentra en la siguiente ruta tfg/sql/arvicuenca.sql.
 
 ### Paso 2
-Descargar el proyecto entero este sera un arcvho .rar llamado tfg
+Debemos de abrir XAMP y despues entrar en phpmyadmin una vez dentro debemos darle al boton de importar y selecionamos la base de datos previamente descargada.
 
 ### Paso 3
-Descomprimir el archivo .rar en la siguiente ruta C:\xampp\htdocs
+Descargar el proyecto entero este sera un arcvho .rar llamado tfg.
 
 ### Paso 4
-Abrir el proyecto en visual studio code, para ello le damos a file despues a open folder y buscamos el archivo que acabamos de descomprimir
+Descomprimir el archivo .rar en la siguiente ruta C:\xampp\htdocs.
 
 ### Paso 5
-Buscamos el archivo index.php este se encontrara fuera de todas las carpetas es decir en la carpeta raiz del proyecto, entramos en el archivo como si lo fueramos a editar y le damos click derecho se nos deplegaran muchas opciones nosotros debemos darle a la de PHP Server: reload server esto hara que se nos abra la pagina princiapl del proyecto en el navegador.
+Abrir el proyecto en visual studio code, para ello le damos a file despues a open folder y buscamos el archivo que acabamos de descomprimir.
 
 ### Paso 6
+Buscamos el archivo index.php este se encontrara fuera de todas las carpetas es decir en la carpeta raiz del proyecto, entramos en el archivo como si lo fueramos a editar y le damos click derecho se nos deplegaran muchas opciones nosotros debemos darle a la de PHP Server: reload server esto hara que se nos abra la pagina princiapl del proyecto en el navegador.
+
+### Paso 7
 Por ultimo debemos de buscar el archivo credenciales.txt que se encontrara junto al de index.php este archivo nos dara dos usuarios uno administrador y otro cliente para que podamos hacer uso de toda la web.
 
 
