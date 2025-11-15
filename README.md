@@ -8,7 +8,7 @@ Este repositorio contiene el código fuente de mi Trabajo de Fin de Grado (TFG) 
 
 ## 📖 Descripción del Proyecto
 
-El objetivo es diseñar y desarrollar una web que sea compltamente funcional y nos permita implementarla en una tienda fisica real, la web esta enfocada en los recambios del automovil. La web permite al usuario navegar por un ctalogo de productos, buscar productos mediante filtros y realizar pedidos que posteriormente seran enviados a su domicilio, de momento todo el proceso de pago y envio esta simulado en un futuro se podria implenar una pasarela de pago real y un sistema de mensajeroa con otras mejoras en la web.
+El objetivo es diseñar y desarrollar una web que sea compltamente funcional y nos permita implementarla en una tienda fisica real, la web esta enfocada en los recambios del automovil. La web permite al usuario navegar por un catalogo de productos, buscar productos mediante filtros y realizar pedidos que posteriormente seran enviados a su domicilio, de momento todo el proceso de pago y envio esta simulado en un futuro se podria implenar una pasarela de pago real y un sistema de mensajeria con otras mejoras en la web.
 
 ### Motivación
 
