@@ -1,0 +1,535 @@
+
+/* Importar estilos */
+@font-face {
+    font-family: "WebSymbols";
+    src: url("../recursos/fonts/websymbols-regular-webfont.ttf");
+}
+
+@font-face {
+    font-family: "Italiana";
+    src: url("../recursos/fonts/Italiana-Regular.ttf");
+}
+
+/* variables para colores */
+:root{
+    --color-fondo: rgba(234, 238, 244, 1);
+    --color-principal:rgba(17, 60, 131, 1);
+    --color-botones: white;
+    --color-footer:rgba(162, 186, 255, 1);
+    --color-letras: #333;
+    --color-borde: #ccc; 
+}
+
+/* Estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo body */
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
+    font-family: 'Italiana';
+    font-weight: bold;
+}
+
+/* estilo header */
+header{
+    text-align: center;
+    background-color: var(--color-principal);
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo{
+    width: 8%;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+}
+
+/* estilo botones */
+nav{
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+nav a {
+    color: var(--color-botones);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: border-radius 0.3s, background-color 0.3s, color 0.3s;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: var(--color-botones);
+    color: var(--color-letras);
+    border-radius: 5px;
+}
+
+/* estilos carrito */
+.cart{
+ float: right;
+}
+
+.cart img{
+    width: 55px;
+    height: auto;
+    margin-top: 25px;
+    background-color: var(--color-botones);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+
+}
+
+.cart img:hover{
+    background-color: #8f8f8f;
+    
+}
+
+/* estilo boton inicio sesion */
+.inicio{
+    font-family: 'WebSymbols';
+    font-size: 35px;
+    border-radius: 5px;
+    padding: 2px;
+    transition: background-color 0.3s;
+}
+
+.inicio-sesion{
+    padding: 5px;
+    background-color: var(--color-botones);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    border-radius: 5px;
+    color: black;
+}
+
+.inicio:hover{
+    background-color: gray;
+}
+
+/* estilo boton contacto */
+
+.contacto{
+    font-family: 'WebSymbols';
+    font-size: 35px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 2px;
+    transition: background-color 0.3s;
+
+}
+
+.contacto-boton{
+    margin-top: 5px;
+    padding: 5px;
+    background-color: var(--color-botones);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    border-radius: 5px;
+    color: black;
+    
+}
+
+.contacto:hover{
+    background-color: gray;
+}
+
+/* estilo aside de los botones */
+.aside-botones{
+    width: 150px;
+    float: right;
+    text-align: center;
+}
+
+/* Estilos contenedor principal */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid var(--color-borde);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+/* Imagen */
+.image {
+    flex: 1 1 50px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-right: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Detalles */
+.details {
+    flex: 2 1 450px;
+    width: auto;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.details h1 {
+    font-size: 2.5rem;
+    color: var(--color-principal);
+    margin-bottom: 5px;
+    text-align: left;
+    border-bottom: 2px solid var(--color-footer);
+    padding-bottom: 10px;
+}
+
+/* Precio y Stock */
+.precio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.precio .monto {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--color-letras);
+    margin-right: 30px;
+}
+
+.precio .stock {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.stock.disponible {
+    background-color: #28a745;
+    color: white;
+}
+
+.stock.agotado {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Descripción */
+.descripcion {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.descripcion h2 {
+    font-size: 1.6rem;
+    color: var(--color-principal);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-letras);
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-weight: normal;
+}
+
+/* Acciones (Cantidad y Botón) */
+.acciones {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-footer);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Control de Cantidad */
+.cantidad label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cantidad-control {
+    display: flex;
+    border: 1px solid var(--color-letras);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cantidad-control input[type="number"] {
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 8px 0;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+.btn-cantidad {
+    background-color: var(--color-footer);
+    color: var(--color-letras);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-cantidad:hover {
+    background-color: var(--color-principal);
+    color: var(--color-botones);
+}
+
+/* Botón Añadir al Carrito */
+.btn-comprar {
+    flex-grow: 1;
+    background-color: var(--color-principal);
+    color: var(--color-botones) !important;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    text-transform: uppercase;
+}
+
+.btn-comprar:hover:not([disabled]) {
+    background-color: #00458a;
+    transform: translateY(-1px);
+}
+
+.btn-comprar[disabled] {
+    background-color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.8;
+    color: #666 !important;
+}
+
+/* estilos footer */
+footer {
+    background-color: var(--color-footer);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: table;
+    width: 100%;
+    border-radius: 5px;
+}
+.ubicacion, .redes {
+    margin-bottom: 15px;
+}
+.marcas {
+    text-align: center;
+    margin: 15px 0;
+}
+.img-marca {
+    display: inline-block;
+    margin: 0 10px; 
+    vertical-align: middle; 
+}
+.img-marca img {
+    width: 80px; 
+    height: auto;
+}
+.redes .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: var(--color-letras);
+    color: white;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.redes .icon:hover{
+    background-color: var(--color-botones);
+    color: var(--color-letras);
+}
+
+.ubicacion, .marcas, .redes{
+    display: table-cell;
+    width: 33%;
+}
+
+.ubicacion a{
+    text-decoration: none;
+    color: var(--color-letras);
+    padding: 3px;
+    transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
+}
+
+.ubicacion a:hover{
+    background-color: var(--color-letras);
+    color: var(--color-botones);
+    border-radius: 5px;
+}
+
+#menu, #menu-check{
+    display: none;
+}
+
+/* punto de ruptura */
+@media (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .image, .details {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+
+    .details h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px){
+
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        font-weight: bold;
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.8em;
+        top: 1.5em;
+        border: 2px solid black;
+        border-radius: 5px;
+        z-index: 9999;
+        margin-right: 60px;
+    }
+
+    #menu:hover{
+        color: var(--color-letras);
+        background-color: var(--color-botones);
+    }
+
+    #menu-cerrar{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+
+    header div.contendor nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0.5em;
+        padding-right: 1.5em;
+        color: white;
+    }
+
+    header div.contendor nav ul a{
+        color: var(--color-letras);
+    }
+
+    header div.contendor nav ul, header div.contenedor nav ul li{
+        width: 50%;
+        display: block;
+        text-align: center;
+        background-color: var(--color-footer);
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+    
+    .desc-img{
+        width: 70%;
+    }
+
+    .aside-botones{
+        margin-top: 20px;
+    }
+
+    .logo{
+        width: 15%;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+
+    .acciones {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .cantidad {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .cantidad-control {
+        margin: 0;
+    }
+
+    .btn-comprar {
+        width: 100%;
+        max-width: none;
+    }
+}

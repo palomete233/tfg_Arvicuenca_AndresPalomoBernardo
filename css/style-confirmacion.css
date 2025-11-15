@@ -1,0 +1,412 @@
+/* Estilos para la página de confirmación de pago */
+@font-face {
+    font-family: "Italiana";
+    src: url("../recursos/fonts/Italiana-Regular.ttf");
+}
+
+:root {
+    --color-fondo: rgba(234, 238, 244, 1);
+    --color-principal: rgba(17, 60, 131, 1);
+    --color-botones: white;
+    --color-footer: rgba(162, 186, 255, 1);
+    --color-letras: #333;
+    --color-exito: #28a745;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
+    font-family: 'Italiana';
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: var(--color-principal);
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    width: 8%;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+nav {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+nav a {
+    color: var(--color-botones);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: border-radius 0.3s, background-color 0.3s, color 0.3s;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--color-botones);
+    color: var(--color-letras);
+    border-radius: 5px;
+}
+
+.cart {
+    float: right;
+}
+
+.cart img {
+    width: 55px;
+    height: auto;
+    margin-top: 25px;
+    background-color: var(--color-botones);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+}
+
+.cart img:hover {
+    background-color: #8f8f8f;
+}
+
+/* Contenedor de confirmación */
+.confirmacion-container {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.confirmacion-contenido {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.icono-exito {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-exito);
+    color: white;
+    font-size: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.confirmacion-contenido h1 {
+    color: var(--color-principal);
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.mensaje-exito {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.detalles-confirmacion {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.detalle-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.detalle-item:last-child {
+    border-bottom: none;
+}
+
+.detalle-label {
+    color: #666;
+    font-size: 16px;
+}
+
+.detalle-valor {
+    color: var(--color-principal);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mensaje-info {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #e7f3ff;
+    border-left: 4px solid var(--color-principal);
+    border-radius: 5px;
+}
+
+.mensaje-info p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #666;
+    font-weight: normal;
+}
+
+.botones-confirmacion {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-seguir-comprando,
+.btn-mi-cuenta {
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s;
+    font-family: 'Italiana';
+}
+
+.btn-seguir-comprando {
+    background-color: white;
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
+}
+
+.btn-seguir-comprando:hover {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+.btn-mi-cuenta {
+    background-color: var(--color-principal);
+    color: white;
+    border: 2px solid var(--color-principal);
+}
+
+.btn-mi-cuenta:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-footer);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: table;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.ubicacion, .redes {
+    margin-bottom: 15px;
+}
+
+.marcas {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.img-marca {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.img-marca img {
+    width: 80px;
+    height: auto;
+}
+
+.redes .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: var(--color-letras);
+    color: white;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.redes .icon:hover {
+    background-color: var(--color-botones);
+    color: var(--color-letras);
+}
+
+.ubicacion, .marcas, .redes {
+    display: table-cell;
+    width: 33%;
+}
+
+.ubicacion a {
+    text-decoration: none;
+    color: var(--color-letras);
+    padding: 3px;
+    transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
+}
+
+.ubicacion a:hover {
+    background-color: var(--color-letras);
+    color: var(--color-botones);
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .confirmacion-contenido {
+        padding: 30px 20px;
+    }
+
+    .confirmacion-contenido h1 {
+        font-size: 28px;
+    }
+
+    .botones-confirmacion {
+        flex-direction: column;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .ubicacion, .marcas, .redes {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+#menu, #menu-check{
+    display: none;
+}
+
+/* punto de ruptura */
+@media (max-width: 400px){
+
+    /* menu hamburguesa */
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        font-weight: bold;
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.8em;
+        top: 1.5em;
+        border: 2px solid black;
+        border-radius: 5px;
+        z-index: 9999;
+        margin-right: 60px;
+    }
+
+    #menu:hover{
+        color: var(--color-letras);
+        background-color: var(--color-botones);
+    }
+
+    #menu-cerrar{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+
+    header div.contendor nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0.5em;
+        padding-right: 1.5em;
+        color: white;
+    }
+
+    header div.contendor nav ul a{
+        color: var(--color-letras);
+    }
+
+    header div.contendor nav ul, header div.contenedor nav ul li{
+        width: 50%;
+        display: block;
+        text-align: center;
+        background-color: var(--color-footer);
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+
+    .desc-img{
+        width: 70%;
+    }
+
+    .aside-botones{
+        margin-top: 20px;
+    }
+
+    .logo{
+        width: 15%;
+    }
+}

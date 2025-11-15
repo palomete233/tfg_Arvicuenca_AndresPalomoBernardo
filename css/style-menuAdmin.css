@@ -1,0 +1,314 @@
+/* Importar estilos */
+@font-face {
+    font-family: "WebSymbols";
+    src: url("../recursos/fonts/websymbols-regular-webfont.ttf");
+}
+
+@font-face {
+    font-family: "Italiana";
+    src: url("../recursos/fonts/Italiana-Regular.ttf");
+}
+
+/* variables para colores */
+:root{
+    --color-fondo: rgba(234, 238, 244, 1);
+    --color-principal:rgba(17, 60, 131, 1);
+    --color-botones: white;
+    --color-footer:rgba(162, 186, 255, 1);
+    --color-letras: #333;
+    --success-bg: #C8E6C9; 
+    --success-text: #2E7D32; 
+}
+
+/* Estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo body */
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
+    font-family: 'Italiana';
+    font-weight: bold;
+}
+
+/* estilo header */
+header{
+    text-align: center;
+    background-color: var(--color-principal);
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+header p{
+    color: white;
+}
+    
+    
+
+.titulo{
+    margin-top: 15px;
+    color: white;
+}
+
+.logo{
+    width: 8%;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+}
+
+/* estilo boton inicio sesion */
+.inicio{
+    font-family: 'WebSymbols';
+    font-size: 35px;
+    border-radius: 5px;
+    padding: 2px;
+    transition: background-color 0.3s;
+}
+
+.cerrar-sesion{
+    padding: 5px;
+    background-color: rgb(242, 119, 119);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    border-radius: 5px;
+    color: black;
+}
+
+/* estilo aside de los botones */
+.aside-botones{
+    margin-top: 375px;
+    width: 150px;
+    text-align: center;
+    position: fixed;        
+    bottom: 20px;           
+    left: 20px;                               
+    padding: 10px 20px;       
+    cursor: pointer;        
+    z-index: 1000;
+}
+
+.inicio:hover{
+    background-color: gray;
+}
+
+/* estilo menu */
+.menu-container {
+    position: fixed;                
+    top: 50%;                       
+    left: 50%;                      
+    transform: translate(-50%, -50%); 
+    background-color: var(--color-principal);
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Estilo del título del menú desplegable */
+.menu-container h3 {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    display: inline-block;
+}
+
+/* Estilo del menú oculto */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: var(--color-botones);
+    color: var(--color-letras);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+/* Elementos del menú */
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+/* Enlaces del menú */
+.menu a {
+    text-decoration: none;
+    color: var(--color-letras);
+    font-weight: bold;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: var(--color-footer);
+}
+
+/* Flecha que rota al abrir */
+.menu-visible .arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* estilos footer */
+footer {
+    background-color: var(--color-footer);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: table;
+    width: 100%;
+    border-radius: 5px;
+}
+.ubicacion, .redes {
+    margin-bottom: 15px;
+}
+.marcas {
+    text-align: center;
+    margin: 15px 0;
+}
+.img-marca {
+    display: inline-block;
+    margin: 0 10px; 
+    vertical-align: middle; 
+}
+.img-marca img {
+    width: 80px; 
+    height: auto;
+}
+.redes .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: var(--color-letras);
+    color: white;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.redes .icon:hover{
+    background-color: var(--color-botones);
+    color: var(--color-letras);
+}
+
+.ubicacion, .marcas, .redes{
+    display: table-cell;
+    width: 33%;
+}
+
+.ubicacion a{
+    text-decoration: none;
+    color: var(--color-letras);
+    padding: 3px;
+    transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
+}
+
+.ubicacion a:hover{
+    background-color: var(--color-letras);
+    color: var(--color-botones);
+    border-radius: 5px;
+}
+
+#menu, #menu-check{
+    display: none;
+}
+
+/* punto de ruptura */
+@media (max-width: 400px){
+
+    /* menu hamburguesa */
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        font-weight: bold;
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.8em;
+        top: 1.5em;
+        border: 2px solid black;
+        border-radius: 5px;
+        z-index: 9999;
+        margin-right: 60px;
+    }
+
+    #menu:hover{
+        color: var(--color-letras);
+        background-color: var(--color-botones);
+    }
+
+    #menu-cerrar{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+
+    header div.contendor nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0.5em;
+        padding-right: 1.5em;
+        color: white;
+    }
+
+    header div.contendor nav ul a{
+        color: var(--color-letras);
+    }
+
+    header div.contendor nav ul, header div.contenedor nav ul li{
+        width: 50%;
+        display: block;
+        text-align: center;
+        background-color: var(--color-footer);
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+
+    .desc-img{
+        width: 70%;
+    }
+
+    .aside-botones{
+        margin-top: 20px;
+    }
+
+    .logo{
+        width: 15%;
+    }
+}

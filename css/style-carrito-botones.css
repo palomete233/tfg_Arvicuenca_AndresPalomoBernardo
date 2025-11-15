@@ -1,0 +1,49 @@
+/* Estilos para los botones del carrito en el catálogo */
+.add-to-cart {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #d31730;
+}
+
+.out-of-stock {
+    background-color: #ccc;
+    color: #666;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+
+/* Ajustar el footer del card para el botón */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* Asegurar que los botones no rompan el layout en móvil */
+@media (max-width: 768px) {
+    .card-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .add-to-cart,
+    .out-of-stock {
+        width: 100%;
+    }
+}

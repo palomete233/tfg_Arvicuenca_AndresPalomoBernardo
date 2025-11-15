@@ -1,0 +1,472 @@
+/* Importar estilos */
+@font-face {
+    font-family: "WebSymbols";
+    src: url("../recursos/fonts/websymbols-regular-webfont.ttf");
+}
+
+@font-face {
+    font-family: "Italiana";
+    src: url("../recursos/fonts/Italiana-Regular.ttf");
+}
+
+/* variables para colores */
+:root{
+    --color-fondo: rgba(234, 238, 244, 1);
+    --color-principal:rgba(17, 60, 131, 1);
+    --color-botones: white;
+    --color-footer:rgba(162, 186, 255, 1);
+    --color-letras: #333;
+}
+
+/* Estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo body */
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
+    font-family: 'Italiana';
+    font-weight: bold;
+}
+
+/* estilo header */
+header{
+    text-align: center;
+    background-color: var(--color-principal);
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo{
+    width: 8%;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+}
+
+/* estilo botones */
+nav{
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+nav a {
+    color: var(--color-botones);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size:  1.2em;
+    transition: border-radius 0.3s, background-color 0.3s, color 0.3s;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: var(--color-botones);
+    color: var(--color-letras);
+    border-radius: 5px;
+}
+
+/* estilos carrito */
+.cart{
+ float: right;
+}
+
+.cart img{
+    width: 55px;
+    height: auto;
+    margin-top: 25px;
+    background-color: var(--color-botones);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+
+}
+
+.cart img:hover{
+    background-color: #8f8f8f;
+    
+}
+
+/* estilo boton inicio sesion */
+.inicio{
+    font-family: 'WebSymbols';
+    font-size: 35px;
+    border-radius: 5px;
+    padding: 2px;
+    transition: background-color 0.3s;
+}
+
+.inicio-sesion{
+    padding: 5px;
+    background-color: var(--color-botones);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    border-radius: 5px;
+    color: black;
+}
+
+.inicio:hover{
+    background-color: gray;
+}
+
+/* estilo boton contacto */
+
+.contacto{
+    font-family: 'WebSymbols';
+    font-size: 35px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 2px;
+    transition: background-color 0.3s;
+
+}
+
+.contacto-boton{
+    margin-top: 5px;
+    padding: 5px;
+    background-color: var(--color-botones);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    border-radius: 5px;
+    color: black;
+    
+}
+
+.contacto:hover{
+    background-color: gray;
+}
+
+/* estilo aside de los botones */
+.aside-botones{
+    width: 150px;
+    float: right;
+    text-align: center;
+}
+
+/* estilos del resumen del pedido */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+    color: var(--color-principal);
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.resumen-pedido {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.articulo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.articulo img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.fila .titulo {
+    font-weight: bold;
+    color: var(--color-principal);
+    font-size: 1.1em;
+}
+
+.fila p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.boton {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+.eliminar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.eliminar:hover {
+    background-color: #c82333;
+}
+
+.descuento {
+    color: #28a745;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.total-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tramitar-pedido {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto 0;
+    padding: 15px;
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.tramitar-pedido:hover {
+    background-color: #0056b3;
+}
+
+.menu{
+    display: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.menu .buscar{
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.menu a{
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color-letras);
+}
+
+#menu, #menu-check{
+    display: none;
+}
+
+/* estilos footer */
+footer {
+    background-color: var(--color-footer);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: table;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 150px;
+}
+.ubicacion, .redes {
+    margin-bottom: 15px;
+}
+.marcas {
+    text-align: center;
+    margin: 15px 0;
+}
+.img-marca {
+    display: inline-block;
+    margin: 0 10px; 
+    vertical-align: middle; 
+}
+.img-marca img {
+    width: 80px; 
+    height: auto;
+}
+.redes .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: var(--color-letras);
+    color: white;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.redes .icon:hover{
+    background-color: var(--color-botones);
+    color: var(--color-letras);
+}
+
+.ubicacion, .marcas, .redes{
+    display: table-cell;
+    width: 33%;
+}
+
+.ubicacion a{
+    text-decoration: none;
+    color: var(--color-letras);
+    padding: 3px;
+    transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
+}
+
+.ubicacion a:hover{
+    background-color: var(--color-letras);
+    color: var(--color-botones);
+    border-radius: 5px;
+}
+
+/* punto de ruptura */
+@media (max-width: 400px){
+
+    /* menu hamburguesa */
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        font-weight: bold;
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.8em;
+        top: 1.5em;
+        border: 2px solid black;
+        border-radius: 5px;
+        z-index: 9999;
+        margin-right: 60px;
+    }
+
+    #menu:hover{
+        color: var(--color-letras);
+        background-color: var(--color-botones);
+    }
+
+    #menu-cerrar{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+
+    header div.contendor nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0.5em;
+        padding-right: 1.5em;
+        color: white;
+    }
+
+    header div.contendor nav ul a{
+        color: var(--color-letras);
+    }
+
+    header div.contendor nav ul, header div.contenedor nav ul li{
+        width: 50%;
+        display: block;
+        text-align: center;
+        background-color: var(--color-footer);
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+
+    .desc-img{
+        width: 70%;
+    }
+
+    .aside-botones{
+        margin-top: 20px;
+    }
+
+    .logo{
+        width: 15%;
+    }
+}
