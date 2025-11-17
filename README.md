@@ -68,10 +68,10 @@ Descargar la base de datos esta se encuentra en la siguiente ruta tfg/sql/arvicu
 Debemos de abrir XAMP y despues entrar en phpmyadmin una vez dentro debemos darle al boton de importar y selecionamos la base de datos previamente descargada.
 
 ### Paso 3
-Descargar el proyecto entero este sera un arcvho .rar llamado tfg.
+Descargar el proyecto entero se descargara en un .zip
 
 ### Paso 4
-Descomprimir el archivo .rar en la siguiente ruta C:\xampp\htdocs.
+Descomprimir el archivo .zip en la siguiente ruta C:\xampp\htdocs.
 
 ### Paso 5
 Abrir el proyecto en visual studio code, para ello le damos a file despues a open folder y buscamos el archivo que acabamos de descomprimir.
