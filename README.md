@@ -46,7 +46,7 @@ Este proyecto está construido utilizando las siguientes tecnologías:
 * **[MySQL](https://www.mysql.com/)**
 
 ### Despliegue
-* [Hostinger](https://www.hostinger.com/es?utm_campaign=Brand-Exact|NT:Se|LO:ES&utm_medium=ppc&gad_source=1&gad_campaignid=2075050483&gclid=CjwKCAiA_dDIBhB6EiwAvzc1cPZDg5nsqvaAm-E1F7H_b893rFM0qrR5tZNl4ORPIjv8f6A19gwjlxoCNYYQAvD_BwE)
+* [InfinityFree](https://www.infinityfree.com)
 
 ---
 
