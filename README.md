@@ -62,7 +62,7 @@ Sigue estos pasos para desplegar este proyecto en tu equipo local
 * Tener las credenciales
 
 ### Paso 1
-Descargar la base de datos esta se encuentra en la siguiente ruta tfg/sql/arvicuenca.sql.
+Descargar la base de datos esta se encuentra en la siguiente ruta sql/arvicuenca.sql.
 
 ### Paso 2
 Debemos de abrir XAMP y despues entrar en phpmyadmin una vez dentro debemos darle al boton de importar y selecionamos la base de datos previamente descargada.
