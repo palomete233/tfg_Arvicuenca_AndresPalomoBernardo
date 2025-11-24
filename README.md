@@ -1,8 +1,6 @@
 # Arvicuenca - TFG 🚗
 
 ![Badge TFG](https://img.shields.io/badge/Proyecto-TFG-blue.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/[TU_USUARIO_GITHUB]/[TU_REPOSITORIO])
-![GitHub last commit](https://img.shields.io/github/last-commit/[TU_USUARIO_GITHUB]/[TU_REPOSITORIO])
 
 Este repositorio contiene el código fuente de mi Trabajo de Fin de Grado (TFG) para el Grado Superior de Aplicaciones Web. El proyecto es una tienda online sobre uan tienda de recambios para el mundo del automovil.
 
