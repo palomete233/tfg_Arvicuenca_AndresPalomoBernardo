@@ -1,0 +1,8 @@
+-----------------------
+admin:
+nom_user: juanpedro23
+password: Juanpedro23
+-----------------------
+user:
+nom_user: luisP45
+password: luisP45@
